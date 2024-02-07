@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-commerce Product Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .product {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .product-image {
+            flex: 0 0 50%;
+            padding: 20px;
+        }
+        .product-image img {
+            max-width: 100%;
+            height: auto;
+        }
+        .product-info {
+            flex: 0 0 50%;
+            padding: 20px;
+        }
+        .product-info h1 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+        .product-info p {
+            font-size: 16px;
+            line-height: 1.5;
+            margin-bottom: 20px;
+        }
+        .cta-button {
+            background-color: #007bff;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            font-size: 18px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        .cta-button:hover {
+            background-color: #0056b3;
+        }
+        @media screen and (max-width: 768px) {
+            .product {
+                flex-direction: column;
+            }
+            .product-image,
+            .product-info {
+                flex: 0 0 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="product">
+            <div class="product-image">
+                <img src="product-image.jpg" alt="Product Image">
+            </div>
+            <div class="product-info">
+                <h1>Product Name</h1>
+                <p>Jeans</p>
+                <p><strong>Price:</strong> $99.99</p>
+                <button class="cta-button">Add to Cart</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
